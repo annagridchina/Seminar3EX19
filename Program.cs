@@ -1,2 +1,33 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 19
+
+//Напишите программу, которая принимает на вход пятизначное число и проверяет, 
+//является ли оно палиндромом.
+
+//14212 -> нет
+
+//12821 -> да
+
+//23432 -> да
+
+Console.WriteLine("Start");
+
+int a = 23432;
+int a1 = 0;
+int a2 = 0;
+int a4 = 0;
+int a5 = 0;
+{
+    a1 = a / 10000;
+    a2 = a / 1000 % 10;
+    a4 = a / 10 % 10;
+    a5 = a % 10;
+}
+  if (a1 == a5 && a2 == a4)
+    {
+        Console.WriteLine(a + " Палиндром");
+    }
+    else
+    {
+        Console.WriteLine(a + " Не палиндром");
+    }
+Console.WriteLine("END");
